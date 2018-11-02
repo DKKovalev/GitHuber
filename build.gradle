@@ -1,4 +1,7 @@
 buildscript {
+
+    ext.ktor_version = '0.9.5'
+    
     repositories {
         google()
         jcenter()

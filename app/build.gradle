@@ -5,6 +5,7 @@ repositories {
     google()
     jcenter()
     mavenCentral()
+    maven { url "https://dl.bintray.com/kotlin/ktor" }
 }
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android-extensions'
@@ -46,6 +47,7 @@ kotlin {
         commonMain {
             dependencies {
                 implementation 'org.jetbrains.kotlin:kotlin-stdlib-common'
+                implementation("io.ktor:ktor-client:$ktor_version")
             }
         }
         commonTest {
